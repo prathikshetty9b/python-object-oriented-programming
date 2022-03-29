@@ -1,15 +1,8 @@
-from item import Item
+from phone import Phone
+from keyboard import Keyboard
 
-item1 = Item('Phone',100,1)
-print(item1.pay_rate)
+item1 = Keyboard("jscKeyboard", 1000, 3)
 
-item1.pay_rate = 0.9 
-print(item1.pay_rate)
+item1.apply_discount()
 
-item1.cat = 0.7
-print(item1.cat)
-
-
-del item1
-
-print(Item.all)
+print(item1.price)
